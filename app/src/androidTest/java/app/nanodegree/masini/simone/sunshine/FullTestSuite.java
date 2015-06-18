@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package app.nanodegree.masini.simone.sunshine;
+package com.example.android.sunshine.app;
 
 import android.test.suitebuilder.TestSuiteBuilder;
 

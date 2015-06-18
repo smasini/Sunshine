@@ -1,4 +1,4 @@
-package app.nanodegree.masini.simone.sunshine.data;
+package com.example.android.sunshine.app.data;
 
 import android.test.AndroidTestCase;
 
