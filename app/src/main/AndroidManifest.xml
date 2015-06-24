@@ -37,7 +37,9 @@
         </activity>
         <provider
             android:authorities="app.nanodegree.masini.simone.sunshine"
-            android:name=".data.WeatherProvider" />
+            android:name=".data.WeatherProvider"
+
+            />
     </application>
 
 </manifest>
