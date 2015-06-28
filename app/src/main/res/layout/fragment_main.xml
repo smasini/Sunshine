@@ -1,11 +1,13 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity$PlaceholderFragment">
+    tools:context="app.nanodegree.masini.simone.sunshine.ForecastFragment">
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        style="@style/ForecastListStyle"
+        android:divider="@null"
         android:id="@+id/listview_forecast"
         />
 </FrameLayout>

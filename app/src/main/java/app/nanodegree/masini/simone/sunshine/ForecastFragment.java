@@ -6,7 +6,6 @@ package app.nanodegree.masini.simone.sunshine;
  * Created by Simone Masini on 12/06/2015 at 18.31.
  */
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -31,6 +30,7 @@ public  class ForecastFragment extends Fragment implements LoaderManager.LoaderC
 
 
     private static final int FORECAST_LOADER = 0;
+    private static final String SELECTED_KEY = "selected_position";
 
     private static final String[] FORECAST_COLUMNS = {
             WeatherContract.WeatherEntry.TABLE_NAME + "." + WeatherContract.WeatherEntry._ID,
@@ -56,6 +56,22 @@ public  class ForecastFragment extends Fragment implements LoaderManager.LoaderC
 
     private final String LOG_TAG = ForecastFragment.class.getSimpleName();
     private ForecastAdapter mForecastAdapter;
+    private ListView mListView;
+    private int mPosition;
+    private boolean mUseTodayLayout;
+
+    /**
+     * A callback interface that all activities containing this fragment must
+     * implement. This mechanism allows activities to be notified of item
+     * selections.
+     **/
+    public interface Callback {
+        /**
+        * DetailFragmentCallback for when an item has been selected.
+        */
+         public void onItemSelected(Uri dateUri);
+    }
+
 
     public ForecastFragment() {
     }
@@ -68,44 +84,43 @@ public  class ForecastFragment extends Fragment implements LoaderManager.LoaderC
 
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.listview_forecast);
-        listView.setAdapter(mForecastAdapter);
+        mListView = (ListView) rootView.findViewById(R.id.listview_forecast);
+        mListView.setAdapter(mForecastAdapter);
 
-        //String locationSetting = Utility.getPreferredLocation(getActivity());
-
-        // Sort order:  Ascending, by date.
-        //String sortOrder = WeatherContract.WeatherEntry.COLUMN_DATE + " ASC";
-       // Uri weatherForLocationUri = WeatherContract.WeatherEntry.buildWeatherLocationWithStartDate(
-        //        locationSetting, System.currentTimeMillis());
-
-       // Cursor cur = getActivity().getContentResolver().query(weatherForLocationUri,
-       //         null, null, null, sortOrder);
-
-
-       // adapter = new ForecastAdapter(getActivity(),cur,0);//new ArrayAdapter<String>(getActivity(),R.layout.list_item_forecast, R.id.list_item_forecast_textview, new ArrayList<String>());
-        //ListView listView = (ListView) rootView.findViewById(R.id.listview_forecast);
-        //listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Cursor cursor = (Cursor) parent.getItemAtPosition(position);
-                if (cursor != null) {
+                ForecastAdapter adapter = (ForecastAdapter) parent.getAdapter();
+                if (cursor != null && cursor.moveToPosition(position)) {
                     String locationSetting = Utility.getPreferredLocation(getActivity());
-                    Intent intent = new Intent(getActivity(), DetailActivity.class)
-                            .setData(WeatherContract.WeatherEntry.buildWeatherLocationWithDate(
-                                    locationSetting, cursor.getLong(COL_WEATHER_DATE)
-                            ));
-                    startActivity(intent);
+                    ((Callback) getActivity()).onItemSelected(WeatherContract.WeatherEntry.buildWeatherLocationWithDate(
+                            locationSetting, cursor.getLong(COL_WEATHER_DATE)
+                    ));
                 }
+                mPosition = position;
             }
         });
-
-
+        if(savedInstanceState != null && savedInstanceState.containsKey(SELECTED_KEY)){
+            mPosition = savedInstanceState.getInt(SELECTED_KEY);
+        }
+        mForecastAdapter.setmUseTodayLayout(mUseTodayLayout);
         return rootView;
     }
 
+    public void setUseTodayLayout(boolean useTodayLayout){
+        mUseTodayLayout = useTodayLayout;
+        if(mForecastAdapter!= null)
+            mForecastAdapter.setmUseTodayLayout(mUseTodayLayout);
+    }
 
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        if(mPosition != ListView.INVALID_POSITION){
+            outState.putInt(SELECTED_KEY, mPosition);
+        }
+        super.onSaveInstanceState(outState);
+    }
 
     @Override
     public void onCreate(Bundle saveInstanceState){
@@ -168,6 +183,9 @@ public  class ForecastFragment extends Fragment implements LoaderManager.LoaderC
     public void onLoadFinished(android.support.v4.content.Loader<Cursor> loader, Cursor cursor) {
         Log.d(LOG_TAG, cursor.toString());
         mForecastAdapter.swapCursor(cursor);
+        if(mPosition != ListView.INVALID_POSITION){
+            mListView.setSelection(mPosition);
+        }
     }
 
     @Override
