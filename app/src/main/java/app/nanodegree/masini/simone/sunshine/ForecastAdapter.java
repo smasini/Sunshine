@@ -73,7 +73,7 @@ public class ForecastAdapter extends CursorAdapter{
         // Read weather forecast from cursor
         String description = cursor.getString(ForecastFragment.COL_WEATHER_DESC);
         viewHolder.descriptionView.setText(description);
-
+        viewHolder.iconView.setContentDescription(description);
         boolean isMetric = Utility.isMetric(context);
 
         // Read high temperature from cursor

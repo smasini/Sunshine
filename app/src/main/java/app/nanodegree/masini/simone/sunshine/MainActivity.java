@@ -34,7 +34,10 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
         }
         ForecastFragment forecastFragment = (ForecastFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_forecast);
         forecastFragment.setUseTodayLayout(!mTwoPane);
+        forecastFragment.setSetSelectedFirst(mTwoPane);
     }
+
+
 
     @Override
     public void onItemSelected(Uri contentUri) {
@@ -102,9 +105,8 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
     protected void onResume() {
         super.onResume();
         String location = Utility.getPreferredLocation(this);
-        // update the location in our second pane using the fragment manager
+        ForecastFragment ff = (ForecastFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_forecast);
         if (location != null && !location.equals(mLocation)) {
-            ForecastFragment ff = (ForecastFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_forecast);
             if (null != ff) {
                 ff.onLocationChanged();
             }

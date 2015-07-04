@@ -59,6 +59,7 @@ public  class ForecastFragment extends Fragment implements LoaderManager.LoaderC
     private ListView mListView;
     private int mPosition;
     private boolean mUseTodayLayout;
+    private boolean mSetSelectedFirst;
 
     /**
      * A callback interface that all activities containing this fragment must
@@ -106,6 +107,11 @@ public  class ForecastFragment extends Fragment implements LoaderManager.LoaderC
         }
         mForecastAdapter.setmUseTodayLayout(mUseTodayLayout);
         return rootView;
+    }
+
+    public void setSetSelectedFirst(boolean selectedFirst){
+        mSetSelectedFirst = selectedFirst;
+        //mListView.performItemClick(mListView.getAdapter().getView(0, null, null), 0, mListView.getAdapter().getItemId(0));
     }
 
     public void setUseTodayLayout(boolean useTodayLayout){
@@ -185,6 +191,10 @@ public  class ForecastFragment extends Fragment implements LoaderManager.LoaderC
         mForecastAdapter.swapCursor(cursor);
         if(mPosition != ListView.INVALID_POSITION){
             mListView.setSelection(mPosition);
+        }
+        if(mSetSelectedFirst){
+            mListView.setItemChecked(0, true);
+            //mListView.performItemClick(null, 0, 0);
         }
     }
 

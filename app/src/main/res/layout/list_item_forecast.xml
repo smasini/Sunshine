@@ -5,8 +5,9 @@
     android:layout_height="wrap_content"
     android:background="@drawable/touch_selector"
     android:textAppearance="?android:attr/textAppearanceLarge"
-    android:padding="16dp"
-    android:visibility="visible">
+    android:visibility="visible"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
     <FrameLayout
         android:layout_width="60dp"
         android:layout_height="match_parent">
