@@ -1,3 +1,18 @@
+/*
+ * Copyright (C) 2014 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package app.nanodegree.masini.simone.sunshine;
 
 import android.content.Context;
@@ -9,15 +24,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by User on 21/06/2015.
- */
 public class Utility {
-
-    // Format used for storing dates in the database.  ALso used for converting those strings
-    // back into date objects for comparison/processing.
-    public static final String DATE_FORMAT = "yyyyMMdd";
-
     public static String getPreferredLocation(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         return prefs.getString(context.getString(R.string.pref_location_key),
@@ -31,20 +38,22 @@ public class Utility {
                 .equals(context.getString(R.string.pref_units_metric));
     }
 
-    static String formatTemperature(Context context, double temperature, boolean isMetric) {
-        double temp;
-        if ( !isMetric ) {
-            temp = 9*temperature/5+32;
-        } else {
-            temp = temperature;
+    public static String formatTemperature(Context context, double temperature) {
+        String suffix = "\u00B0";
+        if(!isMetric(context)){
+            temperature = (temperature * 1.8) + 32;
         }
-        return context.getString(R.string.format_temperature, temp);
+        return String.format(context.getString(R.string.format_temperature), temperature);
     }
 
-    static String formatDate(long dateInMillis) {
-        Date date = new Date(dateInMillis);
+    static String formatDate(long dateInMilliseconds) {
+        Date date = new Date(dateInMilliseconds);
         return DateFormat.getDateInstance().format(date);
     }
+
+    // Format used for storing dates in the database.  ALso used for converting those strings
+    // back into date objects for comparison/processing.
+    public static final String DATE_FORMAT = "yyyyMMdd";
 
     /**
      * Helper method to convert the database representation of the date into something to display
@@ -87,22 +96,6 @@ public class Utility {
     }
 
     /**
-     * Converts db date format to the format "Month day", e.g "June 24".
-     * @param context Context to use for resource localization
-     * @param dateInMillis The db formatted date string, expected to be of the form specified
-     *                in Utility.DATE_FORMAT
-     * @return The day in the form of a string formatted "December 6"
-     */
-    public static String getFormattedMonthDay(Context context, long dateInMillis ) {
-        Time time = new Time();
-        time.setToNow();
-        SimpleDateFormat dbDateFormat = new SimpleDateFormat(Utility.DATE_FORMAT);
-        SimpleDateFormat monthDayFormat = new SimpleDateFormat("d MMMM");
-        String monthDayString = monthDayFormat.format(dateInMillis);
-        return monthDayString;
-    }
-
-    /**
      * Given a day, returns just the name to use for that day.
      * E.g "today", "tomorrow", "wednesday".
      *
@@ -129,6 +122,22 @@ public class Utility {
             SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE");
             return dayFormat.format(dateInMillis);
         }
+    }
+
+    /**
+     * Converts db date format to the format "Month day", e.g "June 24".
+     * @param context Context to use for resource localization
+     * @param dateInMillis The db formatted date string, expected to be of the form specified
+     *                in Utility.DATE_FORMAT
+     * @return The day in the form of a string formatted "December 6"
+     */
+    public static String getFormattedMonthDay(Context context, long dateInMillis ) {
+        Time time = new Time();
+        time.setToNow();
+        SimpleDateFormat dbDateFormat = new SimpleDateFormat(Utility.DATE_FORMAT);
+        SimpleDateFormat monthDayFormat = new SimpleDateFormat("d MMMM");
+        String monthDayString = monthDayFormat.format(dateInMillis);
+        return monthDayString;
     }
 
     public static String getFormattedWind(Context context, float windSpeed, float degrees) {
@@ -164,8 +173,16 @@ public class Utility {
         return String.format(context.getString(windFormat), windSpeed, direction);
     }
 
-    public static int getIconResourceForWeatherCondition(int weatherId){
-        if(weatherId >= 200 && weatherId <= 232){
+    /**
+     * Helper method to provide the icon resource id according to the weather condition id returned
+     * by the OpenWeatherMap call.
+     * @param weatherId from OpenWeatherMap API response
+     * @return resource id for the corresponding icon. -1 if no relation is found.
+     */
+    public static int getIconResourceForWeatherCondition(int weatherId) {
+        // Based on weather code data found at:
+        // http://bugs.openweathermap.org/projects/api/wiki/Weather_Condition_Codes
+        if (weatherId >= 200 && weatherId <= 232) {
             return R.drawable.ic_storm;
         } else if (weatherId >= 300 && weatherId <= 321) {
             return R.drawable.ic_light_rain;
@@ -191,6 +208,12 @@ public class Utility {
         return -1;
     }
 
+    /**
+     * Helper method to provide the art resource id according to the weather condition id returned
+     * by the OpenWeatherMap call.
+     * @param weatherId from OpenWeatherMap API response
+     * @return resource id for the corresponding icon. -1 if no relation is found.
+     */
     public static int getArtResourceForWeatherCondition(int weatherId) {
         // Based on weather code data found at:
         // http://bugs.openweathermap.org/projects/api/wiki/Weather_Condition_Codes
