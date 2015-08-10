@@ -5,9 +5,6 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="a10f97b6-f527-4496-b7b7-8025ff1801f4" name="Default" comment="" />
     <ignored path="Sunshine.iws" />
@@ -29,57 +26,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForecastFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/ForecastFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="300" column="5" selection-start-line="300" selection-start-column="5" selection-end-line="300" selection-end-column="5" />
-              <folding>
-                <element signature="e#8973#8974#0" expanded="true" />
-                <element signature="e#9039#9040#0" expanded="true" />
-                <element signature="e#10908#10909#0" expanded="true" />
-                <element signature="e#10957#10958#0" expanded="true" />
-                <element signature="e#11412#11440#0" expanded="true" />
-                <element signature="e#11695#11735#0" expanded="true" />
-                <element signature="e#11879#11920#0" expanded="true" />
-                <element signature="e#12057#12102#0" expanded="true" />
-                <element signature="e#12274#12313#0" expanded="true" />
-                <element signature="e#13008#13052#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pref_general.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/Utility.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="266" column="4" selection-start-line="266" selection-start-column="4" selection-end-line="266" selection-end-column="4" />
+              <caret line="444" column="5" selection-start-line="444" selection-start-column="5" selection-end-line="444" selection-end-column="5" />
               <folding>
                 <element signature="e#11111#11144#0" expanded="true" />
                 <element signature="e#11369#11415#0" expanded="true" />
                 <element signature="e#11675#11721#0" expanded="true" />
+                <element signature="e#12429#12451#0" expanded="true" />
+                <element signature="e#12535#12557#0" expanded="true" />
+                <element signature="e#12643#12665#0" expanded="true" />
+                <element signature="e#12739#12761#0" expanded="true" />
+                <element signature="e#12835#12857#0" expanded="true" />
+                <element signature="e#12931#12953#0" expanded="true" />
+                <element signature="e#13027#13049#0" expanded="true" />
+                <element signature="e#13123#13145#0" expanded="true" />
+                <element signature="e#13219#13241#0" expanded="true" />
+                <element signature="e#13315#13337#0" expanded="true" />
+                <element signature="e#13411#13433#0" expanded="true" />
+                <element signature="e#13507#13529#0" expanded="true" />
+                <element signature="e#13603#13625#0" expanded="true" />
+                <element signature="e#13699#13721#0" expanded="true" />
+                <element signature="e#13795#13817#0" expanded="true" />
+                <element signature="e#13891#13913#0" expanded="true" />
+                <element signature="e#13987#14009#0" expanded="true" />
+                <element signature="e#14083#14105#0" expanded="true" />
+                <element signature="e#14179#14201#0" expanded="true" />
+                <element signature="e#14275#14297#0" expanded="true" />
+                <element signature="e#14371#14393#0" expanded="true" />
+                <element signature="e#14467#14489#0" expanded="true" />
+                <element signature="e#14563#14585#0" expanded="true" />
+                <element signature="e#14659#14681#0" expanded="true" />
+                <element signature="e#14755#14777#0" expanded="true" />
+                <element signature="e#14851#14873#0" expanded="true" />
+                <element signature="e#14947#14969#0" expanded="true" />
+                <element signature="e#15043#15065#0" expanded="true" />
+                <element signature="e#15139#15161#0" expanded="true" />
+                <element signature="e#15235#15257#0" expanded="true" />
+                <element signature="e#15331#15353#0" expanded="true" />
+                <element signature="e#15427#15449#0" expanded="true" />
+                <element signature="e#15523#15545#0" expanded="true" />
+                <element signature="e#15619#15641#0" expanded="true" />
+                <element signature="e#15715#15737#0" expanded="true" />
+                <element signature="e#15811#15833#0" expanded="true" />
+                <element signature="e#15907#15929#0" expanded="true" />
+                <element signature="e#16003#16025#0" expanded="true" />
+                <element signature="e#16099#16121#0" expanded="true" />
+                <element signature="e#16195#16217#0" expanded="true" />
+                <element signature="e#16291#16313#0" expanded="true" />
+                <element signature="e#16387#16409#0" expanded="true" />
+                <element signature="e#16483#16505#0" expanded="true" />
+                <element signature="e#16579#16601#0" expanded="true" />
+                <element signature="e#16675#16697#0" expanded="true" />
+                <element signature="e#16771#16793#0" expanded="true" />
+                <element signature="e#16867#16889#0" expanded="true" />
+                <element signature="e#16963#16985#0" expanded="true" />
+                <element signature="e#17059#17081#0" expanded="true" />
+                <element signature="e#17155#17177#0" expanded="true" />
+                <element signature="e#17251#17273#0" expanded="true" />
+                <element signature="e#17347#17369#0" expanded="true" />
+                <element signature="e#17443#17465#0" expanded="true" />
+                <element signature="e#17539#17561#0" expanded="true" />
+                <element signature="e#17630#17686#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6772152">
+              <caret line="110" column="79" selection-start-line="110" selection-start-column="79" selection-end-line="110" selection-end-column="79" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,16 +133,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeatherProvider.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/data/WeatherProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2196319">
-              <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1221,16 +1232,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/Utility.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/sync/SunshineSyncAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/ForecastFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/LocationEditTextPreference.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/Utility.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/DetailFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/ForecastAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_detail_wide.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item_forecast_today.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       </list>
     </option>
   </component>
@@ -1340,6 +1356,24 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sunshine" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
@@ -1356,6 +1390,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1588,7 +1626,7 @@
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26618123" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2249191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1615,8 +1653,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="95" column="32" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="32" />
           <folding>
-            <element signature="e#3687#3688#0" expanded="false" />
-            <element signature="e#3726#3727#0" expanded="false" />
+            <element signature="e#3687#3688#0" expanded="true" />
+            <element signature="e#3726#3727#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1669,8 +1707,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3687#3688#0" expanded="false" />
-            <element signature="e#3726#3727#0" expanded="false" />
+            <element signature="e#3687#3688#0" expanded="true" />
+            <element signature="e#3726#3727#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1701,42 +1739,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/DetailFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="32" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="32" />
-          <folding>
-            <element signature="e#3687#3688#0" expanded="false" />
-            <element signature="e#3726#3727#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.448276">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#688#717#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22160149">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1782,26 +1788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.72">
-          <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="266" column="4" selection-start-line="266" selection-start-column="4" selection-end-line="266" selection-end-column="4" />
-          <folding>
-            <element signature="e#11111#11144#0" expanded="true" />
-            <element signature="e#11369#11415#0" expanded="true" />
-            <element signature="e#11675#11721#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1836,6 +1822,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/data/WeatherProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2196319">
+          <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/LocationEditTextPreference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1846,10 +1840,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/data/WeatherProvider.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/DetailFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2196319">
-          <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8331288">
+          <caret line="233" column="12" selection-start-line="233" selection-start-column="12" selection-end-line="233" selection-end-column="12" />
+          <folding>
+            <element signature="e#3687#3688#0" expanded="true" />
+            <element signature="e#3726#3727#0" expanded="true" />
+            <element signature="e#9407#9466#0" expanded="true" />
+            <element signature="e#10078#10137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/ForecastAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4993865">
+          <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37277353">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_detail_wide.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4610304">
+          <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38931298">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item_forecast_today.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4385733">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41717792">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/nanodegree/masini/simone/sunshine/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="444" column="5" selection-start-line="444" selection-start-column="5" selection-end-line="444" selection-end-column="5" />
+          <folding>
+            <element signature="e#11111#11144#0" expanded="true" />
+            <element signature="e#11369#11415#0" expanded="true" />
+            <element signature="e#11675#11721#0" expanded="true" />
+            <element signature="e#12429#12451#0" expanded="true" />
+            <element signature="e#12535#12557#0" expanded="true" />
+            <element signature="e#12643#12665#0" expanded="true" />
+            <element signature="e#12739#12761#0" expanded="true" />
+            <element signature="e#12835#12857#0" expanded="true" />
+            <element signature="e#12931#12953#0" expanded="true" />
+            <element signature="e#13027#13049#0" expanded="true" />
+            <element signature="e#13123#13145#0" expanded="true" />
+            <element signature="e#13219#13241#0" expanded="true" />
+            <element signature="e#13315#13337#0" expanded="true" />
+            <element signature="e#13411#13433#0" expanded="true" />
+            <element signature="e#13507#13529#0" expanded="true" />
+            <element signature="e#13603#13625#0" expanded="true" />
+            <element signature="e#13699#13721#0" expanded="true" />
+            <element signature="e#13795#13817#0" expanded="true" />
+            <element signature="e#13891#13913#0" expanded="true" />
+            <element signature="e#13987#14009#0" expanded="true" />
+            <element signature="e#14083#14105#0" expanded="true" />
+            <element signature="e#14179#14201#0" expanded="true" />
+            <element signature="e#14275#14297#0" expanded="true" />
+            <element signature="e#14371#14393#0" expanded="true" />
+            <element signature="e#14467#14489#0" expanded="true" />
+            <element signature="e#14563#14585#0" expanded="true" />
+            <element signature="e#14659#14681#0" expanded="true" />
+            <element signature="e#14755#14777#0" expanded="true" />
+            <element signature="e#14851#14873#0" expanded="true" />
+            <element signature="e#14947#14969#0" expanded="true" />
+            <element signature="e#15043#15065#0" expanded="true" />
+            <element signature="e#15139#15161#0" expanded="true" />
+            <element signature="e#15235#15257#0" expanded="true" />
+            <element signature="e#15331#15353#0" expanded="true" />
+            <element signature="e#15427#15449#0" expanded="true" />
+            <element signature="e#15523#15545#0" expanded="true" />
+            <element signature="e#15619#15641#0" expanded="true" />
+            <element signature="e#15715#15737#0" expanded="true" />
+            <element signature="e#15811#15833#0" expanded="true" />
+            <element signature="e#15907#15929#0" expanded="true" />
+            <element signature="e#16003#16025#0" expanded="true" />
+            <element signature="e#16099#16121#0" expanded="true" />
+            <element signature="e#16195#16217#0" expanded="true" />
+            <element signature="e#16291#16313#0" expanded="true" />
+            <element signature="e#16387#16409#0" expanded="true" />
+            <element signature="e#16483#16505#0" expanded="true" />
+            <element signature="e#16579#16601#0" expanded="true" />
+            <element signature="e#16675#16697#0" expanded="true" />
+            <element signature="e#16771#16793#0" expanded="true" />
+            <element signature="e#16867#16889#0" expanded="true" />
+            <element signature="e#16963#16985#0" expanded="true" />
+            <element signature="e#17059#17081#0" expanded="true" />
+            <element signature="e#17155#17177#0" expanded="true" />
+            <element signature="e#17251#17273#0" expanded="true" />
+            <element signature="e#17347#17369#0" expanded="true" />
+            <element signature="e#17443#17465#0" expanded="true" />
+            <element signature="e#17539#17561#0" expanded="true" />
+            <element signature="e#17630#17686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6772152">
+          <caret line="110" column="79" selection-start-line="110" selection-start-column="79" selection-end-line="110" selection-end-column="79" />
           <folding />
         </state>
       </provider>
