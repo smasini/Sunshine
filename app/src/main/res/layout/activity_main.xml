@@ -1,8 +1,7 @@
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="wrap_content" >
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -20,12 +19,11 @@
     </android.support.v7.widget.Toolbar>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_forecast"
-    android:name="app.nanodegree.masini.simone.sunshine.ForecastFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="app.nanodegree.masini.simone.sunshine.ForecastFragment"
-    tools:layout="@android:layout/list_content" />
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_forecast"
+        android:name="app.nanodegree.masini.simone.sunshine.ForecastFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@android:layout/list_content" />
 
-</LinearLayout>
+</FrameLayout>

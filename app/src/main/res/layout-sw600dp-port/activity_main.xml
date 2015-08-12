@@ -30,6 +30,7 @@
     <!-- This view is used to provide the area that is overlapped
          as well as the anchor point that the weather detail will
          use to overlap the "appbar" -->
+
     <View
         android:elevation="@dimen/appbar_elevation"
         android:background="@color/primary"
