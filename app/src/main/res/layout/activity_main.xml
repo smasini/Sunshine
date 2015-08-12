@@ -25,7 +25,7 @@
     android:name="app.nanodegree.masini.simone.sunshine.ForecastFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.sunshine.app.ForecastFragment"
+    tools:context="app.nanodegree.masini.simone.sunshine.ForecastFragment"
     tools:layout="@android:layout/list_content" />
 
 </LinearLayout>
