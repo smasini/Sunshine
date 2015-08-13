@@ -30,7 +30,6 @@
     <!-- This view is used to provide the area that is overlapped
          as well as the anchor point that the weather detail will
          use to overlap the "appbar" -->
-
     <View
         android:elevation="@dimen/appbar_elevation"
         android:background="@color/primary"
@@ -42,10 +41,10 @@
         android:id="@+id/weather_detail_container"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:elevation="@dimen/detail_card_elevation"
         android:layout_below="@id/sunshine_logo_imageview"
         android:layout_marginLeft="@dimen/abc_list_item_padding_horizontal_material"
         android:layout_marginRight="@dimen/abc_list_item_padding_horizontal_material"
+        app:cardElevation="@dimen/detail_card_elevation"
         app:cardPreventCornerOverlap="false"
         />
 
@@ -56,5 +55,6 @@
         android:layout_width="match_parent"
         android:layout_below="@id/weather_detail_container"
         tools:layout="@android:layout/list_content"
+        android:choiceMode="singleChoice"
         />
 </RelativeLayout>
