@@ -188,4 +188,11 @@
     <string name="pref_art_pack_sunshine" translatable="false">https://raw.githubusercontent.com/udacity/Sunshine-Version-2/sunshine_master/app/src/main/res/drawable-xxhdpi/art_%s.png</string>
     <!-- Value in SharedPreferences for cute dogs art pack  option [CHAR LIMIT=NONE] -->
     <string name="pref_art_pack_cute_dogs" translatable="false">https://raw.githubusercontent.com/udacity/Sunshine-Version-2/sunshine_master/app/src/main/res/drawable-mdpi/art_%s.png</string>
+
+    <!-- For Shared Element Transitions -->
+    <string name="detail_icon_transition_name" translatable="false">TN_DetailIcon</string>
+    <string name="detail_max_transition_name" translatable="false">TN_DetailMax</string>
+    <string name="detail_min_transition_name" translatable="false">TN_DetailMin</string>
+
+
 </resources>
