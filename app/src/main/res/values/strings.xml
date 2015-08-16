@@ -194,5 +194,7 @@
     <string name="detail_max_transition_name" translatable="false">TN_DetailMax</string>
     <string name="detail_min_transition_name" translatable="false">TN_DetailMin</string>
 
+    <!-- Strings related to Widgets -->
+    <string name="title_widget_today">Sunshine Today</string>
 
 </resources>

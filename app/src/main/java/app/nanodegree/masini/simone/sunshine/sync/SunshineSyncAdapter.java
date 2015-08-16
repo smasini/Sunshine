@@ -53,6 +53,9 @@ import app.nanodegree.masini.simone.sunshine.data.WeatherContract;
 
 public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
     public final String LOG_TAG = SunshineSyncAdapter.class.getSimpleName();
+
+    public static final String ACTION_DATA_UPDATED = "app.nanodegree.masini.simone.sunshine.ACTION_DATA_UPDATED";
+
     public static final int SYNC_INTERVAL = 60 * 180;
     public static final int SYNC_FLEXTIME = SYNC_INTERVAL/3;
     private static final long DAY_IN_MILLIS = 1000 * 60 * 60 * 24;
@@ -337,7 +340,7 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                                 WeatherContract.WeatherEntry.COLUMN_DATE + " <= ?",
                                 new String[]{Long.toString(dayTime.setJulianDay(julianStartDay-1))}
                         );
-
+                updateWidgets();
                 notifyWeather();
             }
 
@@ -437,6 +440,14 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                 }
             }
         }
+    }
+
+    private void updateWidgets(){
+        Context context = getContext();
+        // Setting the package ensures that only components in our app will receive the broadcast
+        Intent dataUpdatedIntent = new Intent(ACTION_DATA_UPDATED)
+                .setPackage(context.getPackageName());
+        context.sendBroadcast(dataUpdatedIntent);
     }
 
     /**
