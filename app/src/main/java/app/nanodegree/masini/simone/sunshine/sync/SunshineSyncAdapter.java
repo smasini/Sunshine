@@ -50,6 +50,7 @@ import app.nanodegree.masini.simone.sunshine.MainActivity;
 import app.nanodegree.masini.simone.sunshine.R;
 import app.nanodegree.masini.simone.sunshine.Utility;
 import app.nanodegree.masini.simone.sunshine.data.WeatherContract;
+import app.nanodegree.masini.simone.sunshine.muzei.WeatherMuzeiSource;
 
 public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
     public final String LOG_TAG = SunshineSyncAdapter.class.getSimpleName();
@@ -341,6 +342,7 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                                 new String[]{Long.toString(dayTime.setJulianDay(julianStartDay-1))}
                         );
                 updateWidgets();
+                updateMuzei();
                 notifyWeather();
             }
 
@@ -450,6 +452,12 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
         context.sendBroadcast(dataUpdatedIntent);
     }
 
+    private void updateMuzei(){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            Context context = getContext();
+            context.startService(new Intent(ACTION_DATA_UPDATED).setClass(context, WeatherMuzeiSource.class));
+        }
+    }
     /**
      * Helper method to handle insertion of a new location in the weather database.
      *
