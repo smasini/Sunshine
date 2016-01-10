@@ -129,6 +129,16 @@ public class Utility {
         }
     }
 
+    // To make it easy to query for the exact date, we normalize all dates that go into
+    // the database to the start of the the Julian day at UTC.
+    public static long normalizeDate(long startDate) {
+        // normalize the start date to the beginning of the (UTC) day
+        Time time = new Time();
+        time.set(startDate);
+        int julianDay = Time.getJulianDay(startDate, time.gmtoff);
+        return time.setJulianDay(julianDay);
+    }
+
     /**
      * Converts db date format to the format "Month day", e.g "June 24".
      * @param context Context to use for resource localization
@@ -484,7 +494,7 @@ public class Utility {
         } else if (weatherId >= 802 && weatherId <= 804) {
             return String.format(Locale.US, formatArtUrl, "clouds");
         }
-        return null;
+        return "";
     }
 
     /**

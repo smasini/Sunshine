@@ -24,6 +24,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 
+import app.nanodegree.masini.simone.sunshine.Utility;
+
 public class WeatherProvider extends ContentProvider {
 
     // The URI Matcher used by this content provider.
@@ -285,7 +287,7 @@ public class WeatherProvider extends ContentProvider {
         // normalize the date value
         if (values.containsKey(WeatherContract.WeatherEntry.COLUMN_DATE)) {
             long dateValue = values.getAsLong(WeatherContract.WeatherEntry.COLUMN_DATE);
-            values.put(WeatherContract.WeatherEntry.COLUMN_DATE, WeatherContract.normalizeDate(dateValue));
+            values.put(WeatherContract.WeatherEntry.COLUMN_DATE, Utility.normalizeDate(dateValue));
         }
     }
 

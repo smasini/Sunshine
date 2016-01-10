@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sunshine</string>
+    <string name="my_digital_name">Sunshine</string>
+    <string name="max_temp_prefs_key">temp-max-sync</string>
+    <string name="min_temp_prefs_key">temp-min-sync</string>
+    <string name="date_sync_prefs_key">date-sync</string>
+</resources>
